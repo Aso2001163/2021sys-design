@@ -11,7 +11,9 @@ activate ユーザー
 opt 認証成功
 webサーバー -> ユーザー : マイページを表示
 
-
+else 認証失敗
+webサーバー -> ユーザー : 再入力を要求
+end
 
 deactivate ユーザー
 
