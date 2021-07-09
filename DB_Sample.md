@@ -17,7 +17,8 @@
   |price|int(11)||〇|| 
   |num|int(11)||〇||
     
-  # m_customers |属性名|型|PK|NN|FK| 
+  # m_customers 
+  |属性名|型|PK|NN|FK| 
   |------|-------|-|-|-| 
   |customer_code|varchar(50)|〇|〇|| 
   |pass|varchar(50)|〇|〇|〇| 
