@@ -6,7 +6,7 @@
 
  ## データベース詳細
  
-  # 購入テーブル d_purchase 
+  # 購入テーブル (d_purchase) 
   |和名|属性名|型|PK|NN|FK| 
   |-------|------|-------|-|-|-| 
   |オーダーID|order_id|bigint(20)|〇|〇|| 
@@ -14,7 +14,7 @@
   |購入日|purchase_date|date||〇|| 
   |総額|total_price|int(11)||〇||
     
-  # d_purchase_detail 
+  # 購入詳細テーブル (d_purchase_detail) 
   |和名|属性名|型|PK|NN|FK| 
  |-------|------|-------|-|-|-| 
   |オーダー詳細ID|detail_id|bigint(20)|〇|〇|| 
@@ -23,7 +23,7 @@
   |価格|price|int(11)||〇|| 
   |数量|num|int(11)||〇||
     
-  # m_customers 
+  # 顧客マスタ (m_customers) 
   |和名|属性名|型|PK|NN|FK| 
  |-------|------|-------|-|-|-| 
   |顧客コード|customer_code|varchar(50)|〇|〇|| 
