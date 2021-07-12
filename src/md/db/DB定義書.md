@@ -35,12 +35,12 @@
   |削除フラグ|del_flag|int(11)|||| 
   |登録日|reg_date|date||〇||
     
-  # m_category 
+  # カテゴリマスタ (m_category) 
   |和名|属性名|型|PK|NN|FK| 
   |-------|------|-------|-|-|-| 
-  |category_id|int(11)|〇|〇|| 
-  |name|varchar(20)||〇|| 
-  |reg_date|date||〇||
+  |カテゴリID|category_id|int(11)|〇|〇|| 
+  |氏名|name|varchar(20)||〇|| 
+  |登録日|reg_date|date||〇||
     
   # m_items 
   |和名|属性名(カラム名)|型|PK|NN|FK| 
