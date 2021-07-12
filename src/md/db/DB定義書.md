@@ -8,7 +8,7 @@
  
   # d_purchase 
   |和名|属性名|型|PK|NN|FK| 
-  |------|-------|-|-|-| 
+  |-------|------|-------|-|-|-| 
   |オーダーID|order_id|bigint(20)|〇|〇|| 
   |顧客コード|customer_code|varchar(50)||〇|| 
   |購入日|purchase_date|date||〇|| 
