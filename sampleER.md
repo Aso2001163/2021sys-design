@@ -2,8 +2,8 @@
 @startuml
 
 entity "顧客マスタ" as customer <m_customers>
-<<M,MASTERMARKCOLOR>>{
-  *cus_id : number <<generated>>
+<<M,MASTER_MARK_COLOR>>{
+ +customer_code[PK]
   --
   *name : text
   description : text
