@@ -1,7 +1,8 @@
 ```startuml
 @startuml
 
-entity "顧客マスタ" as customer <m_customers>{
+entity "顧客マスタ" as customer <m_customers>
+<<M,MASTER MARK COLOR>>{
   *cus_id : number <<generated>>
   --
   *name : text
