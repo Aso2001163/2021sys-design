@@ -1,7 +1,7 @@
 ```startuml
 @startuml
 !define MASTER_MARK_COLOR Orange 
-
+!define TRANSACTION_MARK_COLOR DeepSkyBlue
  entity "顧客マスタ" as customer <m_customers> <<M,MASTER_MARK_COLOR>> {
         + customer_code [PK]
   --
@@ -14,11 +14,12 @@
   reg_date
 }
 
-entity "order" as or {
-  *or_id : number <<generated>>
+entity "購入テーブル" as order <d_purchase> <<TRANSACTION_MARK_COLOR DeepSkyBlue>>{
+  + order_id[PK]
   --
-  *name : text
-  description : text
+  customer_code[FK]
+  purchase_date
+  total_price
 }
 
 
@@ -26,8 +27,8 @@ entity "order" as or {
 
 
 
-customer      |o-ri-o{    or
-or          ||-ri-|{     order_detail 
+customer      |o-ri-o{    order
+order          ||-ri-|{     order_detail 
 order_detail    }-do-||     items 
 items          }o-le-||     category 
 
