@@ -10,7 +10,7 @@ order          ||-ri-|{     order_detail
 order_detail    }-do-||     items 
 
 items          }o-le-||     category 
-
+package "ECサイト" as target_system {
 entity "顧客マスタ" as customer <m_customers> <<M,MASTER_MARK_COLOR>> {
         + customer_code [PK]
         --
