@@ -4,6 +4,7 @@
 
 
 customer       |o-ri-o{    order
+pass
 
 order          ||-ri-|{     order_detail 
 
