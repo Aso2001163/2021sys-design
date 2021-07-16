@@ -1,7 +1,7 @@
 ```startuml
 @startuml
 
-entity "顧客マスタ" as cus {
+entity "顧客マスタ" as customer <m_customers>{
   *cus_id : number <<generated>>
   --
   *name : text
