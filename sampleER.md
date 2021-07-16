@@ -20,7 +20,7 @@ entity "order" as or {
 
 
 
-cus      |o-ri-o{    or
+customer      |o-ri-o{    or
 or          ||-ri-|{     order_detail 
 order_detail    }-do-||     items 
 items          }o-le-||     category 
