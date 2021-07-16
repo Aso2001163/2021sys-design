@@ -1,15 +1,28 @@
 ```startuml
 @startuml
 
+entity "customer" as cus {
+  *cus_id : number <<generated>>
+  --
+  *name : text
+  description : text
+}
+
+entity "order" as or {
+  *or_id : number <<generated>>
+  --
+  *name : text
+  description : text
+}
 
 
-customer       |o-ri-o{    order
-pass
 
+
+
+
+cus      |o-ri-o{    order
 order          ||-ri-|{     order_detail 
-
 order_detail    }-do-||     items 
-
 items          }o-le-||     category 
 
 
