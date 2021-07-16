@@ -2,11 +2,16 @@
 @startuml
 
 entity "顧客マスタ" as customer <m_customers>
-<<M,MASTER_MARK_COLOR>>{
+<<M,MASTER_MARK_COLOR>> {
  +customer_code[PK]
   --
-  *name : text
-  description : text
+  pass
+  name
+  address
+  tel
+  mail
+  del_flag
+  reg_date
 }
 
 entity "order" as or {
