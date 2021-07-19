@@ -25,7 +25,7 @@ entity "購入詳細テーブル" as order_detail <d_purchase_detail> <<T,TRANSA
   + order_id[PK]
   +detail_id[PK]
   --
-  +item_code[FK]
+  -item_code[FK]
   price
   num
 }
