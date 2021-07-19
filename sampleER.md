@@ -40,6 +40,12 @@ entity "商品マスタ" as items <m_items> <<M,MASTER_MARK_COLOR>> {
   del_flag
   reg_date
 }
+entity "カテゴリマスタ" as items <m_items> <<M,MASTER_MARK_COLOR>> {
+  +category_id[PK]
+  --
+  name
+  reg_date
+}
 
 
 
