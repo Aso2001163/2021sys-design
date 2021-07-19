@@ -29,7 +29,17 @@ entity "購入詳細テーブル" as order_detail <d_purchase_detail> <<T,TRANSA
   price
   num
 }
-
+entity "商品マスタ" as items <m_items> <<T,TRANSACTION_MARK_COLOR>> {
+  +item_code[PK]
+  --
+  item_name
+  price
+  -category_id[FK]
+  image
+  detail
+  del_flag
+  reg_date
+}
 
 
 
